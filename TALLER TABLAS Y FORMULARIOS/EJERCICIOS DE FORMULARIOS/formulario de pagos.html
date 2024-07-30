@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pagos</title>
+</head>
+<body>
+        <form>
+            <fieldset>
+                <legend> <strong>DATOS:</strong> </legend> 
+                <ol>
+                    <li>
+                    <label> <strong>Nombre:</strong></label><input type="text" placeholder="Escriba aquí su nombre" name="nombre" maxlength="20"> <br>
+                    <li>
+                    <label> <strong>Correo electrónico:</strong></label> <input type="email" placeholder="ejemplo@dominio.com" required> <br>
+                    </li>
+                    <li>
+                    <label><strong>Teléfono:</strong></label> <input type="number" placeholder="ej. +34984530203" name="telefono" maxlength="20"> <br>
+                    </li>                   
+                </ol>                
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Dirección</strong></legend>  <br>
+                <ol>
+                   <li>
+                    <label> <strong>Dirección:</strong></label> <textarea style="resize": none; name="dirección" align="center" rows="5" cols="25"></textarea> 
+                    <li>
+                    <label> <strong> Código Postal:</strong></label> <input type="number" placeholder="CP" name="código postal"> <br>
+                    </li>
+                    <li>
+                    <label><strong>Ciudad:</strong></label> <input type="text" placeholder="Ciudad" name="ciudad" maxlength="20"> <br>
+                    </li>                   
+                </ol>                
+            </fieldset>
+
+            <fieldset>
+                <legend> <strong>Forma de pago</strong> </legend>  <br>
+                <ol>
+                   <li>
+                    <fieldset>
+                        <legend> <strong>Tarjetas de Crédito</strong> </legend>  <br>
+                        <ul>
+                            <li>
+                            <input type="radio" name="tarjeta" value="VISA"> <strong>VISA</strong> <br>
+                            </li>
+                            <li>
+                            <input type="radio" name="tajeta" value="American Express"> <strong>American Express</strong> <br>
+                            </li>
+                            <li>
+                            <input type="radio" name="tarjeta" value="Master Card"> <strong>Master Cars</strong> <br>
+                            </li>
+                        </ul>
+                    </fieldset>
+                        <li>
+                        <label><strong>Número tarjeta:</strong></label> <input type="number" placeholder="Número tarjeta" name="Número tarjeta"> <br>
+                        </li>
+                        <li>
+                        <label><strong>Código Seguridad:</strong></label> <input type="number" placeholder="Código Seguridad" name="Código Seguridad"> <br>
+                         </li>
+                        <li>
+                         <label><strong>Nombre tarjeta:</strong></label> <input type="text" placeholder="Nombre exacto tarjeta" name="Nombre tarjeta" maxlength="20"> <br>
+                         </li>                   
+                        </ul>                
+                    </fieldset>
+            
+            <fieldset>
+                <button type="submit"> <strong>Comprar</strong></button>
+            </fieldset>
+        </form>
+       
+</body>
+</html>
